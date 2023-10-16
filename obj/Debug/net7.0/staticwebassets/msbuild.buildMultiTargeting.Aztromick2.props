@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Aztromick2.props" />
+</Project>
