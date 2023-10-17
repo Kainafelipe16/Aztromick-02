@@ -1,6 +1,6 @@
 @model Pedido
 <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron text-white">
         <h2>@ViewBag.CheckoutCompletoMensagem</h2>
     </div>
     <div class="card">
@@ -25,7 +25,7 @@
                     </tr>
                         }
             </table>
-            <h4>Valor Total do Pedido:
+            <h4 class="">Valor Total do Pedido:
                 <strong>@(((decimal)ViewBag.TotalPedido).ToString("C2"))</strong>
             </h4>
         </div>
@@ -33,6 +33,6 @@
 </div>
 <div class="form-group" style="text-align :center">
     <h3>
-        <a class="nav-link text-info" asp-controller="Carrinho" asp-action="Index">Retornar</a>
+        <a class="nav-link btn text-white mt-3" asp-controller="Carrinho" asp-action="Index">Retornar</a>
     </h3>
 </div>

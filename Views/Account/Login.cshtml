@@ -1,37 +1,36 @@
 @model LoginViewModel
-<table class="table">
-    <tr>
-        <td><img src="~/images/login1.jpg" class="img-fluid" asp-append-version="true" alt="Fazer o Login" /></td>
-        <td>
-            <div class="row">
-                <div class="col-9 col-md-9 col-lg-9">
-                    <h4>Login</h4>
-                    <form asp-controller="Account" asp-action="Login" method="post" class="form-horizontal" role="form">
-                        <hr />
-                        <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="container-fluid vstack">
+                    <h4 class="text-white mt-3">Logar</h4>
+                    <hr class="bg-white col-6">
+                    <form asp-controller="Account" asp-action="Login" method="post" class="form-horizontal text-white" role="form">
+                         
+
                         <input type="hidden" asp-for="ReturnUrl" />
+
                         <div class="form-group">
-                            <label asp-for="UserName" class="col-md-2 control-label"></label>
+                            <label asp-for="UserName" class="control-label"></label>
                             <div class="col-md-6">
-                                <input asp-for="UserName" class="form-control" />
-                                <span asp-validation-for="UserName" class="text-danger"></span>
+                                <input asp-for="UserName" class="form-control" placeholder="Digite seu E-mail:" />
+                                <span asp-validation-for="UserName" class="text-white"></span>
                             </div>
                         </div>
+
                         <div class="form-group">
-                            <label asp-for="Password" class="col-md-2 control-label"></label>
+                            <label asp-for="Password" class="control-label"></label>
                             <div class="col-md-6">
-                                <input asp-for="Password" class="form-control" />
-                                <span asp-validation-for="Password" class="text-danger"></span>
+                                <input asp-for="Password" class="form-control" placeholder="Digite sua Senha:" />
+                                <span asp-validation-for="Password" class="text-white"></span>
                             </div>
                         </div>
+
                         <div class="form-group">
                             <div class="col-md-8 mt-2">
-                                <input type="submit" class="btn btn-success" value="Log in" />
+                                <input type="submit" class="btn border-white text-white mt-3" value="Logar"/>
                             </div>
+                        <a class="btn text-white border-white mt-3" asp-controller="Home" asp-action="Index">Voltar a pagina</a>
                         </div>
-                    </form>
-                </div>
+
+                    </form>             
             </div>
-        </td>
-    </tr>
-</table>
+  
