@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Aztromick2.Context;
 using Aztromick2.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Aztromick2.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class AdminCategoriaController : Controller
     {

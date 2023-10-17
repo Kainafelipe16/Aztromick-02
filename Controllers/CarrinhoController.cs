@@ -1,10 +1,12 @@
 using Aztromick2.Models;
 using Aztromick2.Repositories.Interfaces;
 using Aztromick2.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Aztromick2.Controllers
 {
+    [Authorize]
     public class CarrinhoController : Controller
     {
         private readonly Carrinho _carrinho;

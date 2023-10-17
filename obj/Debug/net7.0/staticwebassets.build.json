@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wYHWrdEQUdyJcFXH27OVTa9fYKnZao5GWzkLvu6fSaA=",
+  "Hash": "KzTiA9WofdJtt4KLQGOiCRDqGyNjiAaPswiBUioDXco=",
   "Source": "Aztromick2",
   "BasePath": "_content/Aztromick2",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\banner2.png"
+    },
+    {
+      "Identity": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\banner3.png",
+      "SourceId": "Aztromick2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\dev\\Aztromick-02\\wwwroot\\",
+      "BasePath": "_content/Aztromick2",
+      "RelativePath": "imagens/banner3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\banner3.png"
     },
     {
       "Identity": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\logo.png",

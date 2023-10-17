@@ -24,8 +24,11 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Admin"
-                                asp-action="Index">Admin</a>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="Admin"
+                                    asp-action="Index">Admin</a>
+                            }
                         </li>
                         <li class="nav-item">
 
@@ -48,6 +51,9 @@
                         </li>
                        
                         
+                        <li>
+                            @await Html.PartialAsync("_Login")
+                        </li>
                     </ul>
                     <div class="mx-auto">
                          <input class="" type="" placeholder="Buscar Produtos:"> <i class="bi bi-search"></i>
@@ -60,39 +66,11 @@
             </div>
         </nav>
     </header>
-
-    <main class="container-fluid">
-        @RenderBody()
-    </main>
-
-   
-   
-   <div class="tamanho">
-    
-   </div>
-
-    <footer class="bgcor fixed-bottom">
-        <div class="container d-flex justify-content-center  pt-4">
-
-            
-
-            <i class="bi bi-geo-alt fs-3 pe-3"></i>
-
-
-
-            <div class="d-flex flex-column">
-                <p class="tamanhofooter fs15">Avenida Japão</p>
-                <p class="tamanhofooter fs15">Numero: 45</p>
-                <p class="fs15">Bairro Copacabana</p>
-            </div>
-
-     
-
-        <div class=" fs-4 ms-auto">
-            <i class="bi bi-whatsapp"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-        </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
 
         </div>
 
