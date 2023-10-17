@@ -280,3 +280,9 @@ C:\dev\Aztromick2\obj\Debug\net7.0\Aztromick2.pdb
 C:\dev\Aztromick2\obj\Debug\net7.0\Aztromick2.genruntimeconfig.cache
 C:\dev\Aztromick2\obj\Debug\net7.0\ref\Aztromick2.dll
 C:\dev\Aztromick2\obj\Debug\net7.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\dev\Aztromick2\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\dev\Aztromick2\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\dev\Aztromick2\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\dev\Aztromick2\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\dev\Aztromick2\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\dev\Aztromick2\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

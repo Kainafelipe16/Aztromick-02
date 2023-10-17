@@ -1,9 +1,10 @@
 using Aztromick2.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Aztromick2.Context
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<UserAccount>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -11,6 +12,8 @@ namespace Aztromick2.Context
 
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Item> Itens { get; set; }
-        public DbSet<CarrinhoItem> CarrinhoItens{get;set;}
+        public DbSet<CarrinhoItem> CarrinhoItens { get; set; }
+        public DbSet<Pedido> Pedidos { get; set; }
+        public DbSet<PedidoItem> PedidoItens { get; set; }
     }
 }
