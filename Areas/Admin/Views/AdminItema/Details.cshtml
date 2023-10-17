@@ -4,12 +4,11 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1 class="text-white">Detalhes do Item</h1>
 
 <div>
-    <h4>Item</h4>
-    <hr />
-    <dl class="row">
+    <hr class="bg-white" />
+    <dl class="row text-white">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Nome)
         </dt>
@@ -67,6 +66,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.ItemId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a class="btn border-white text-white" asp-action="Edit" asp-route-id="@Model?.ItemId">Editar</a> 
 </div>
+<a class="btn text-white border-white mt-3" asp-action="Index">Voltar a pagina</a>

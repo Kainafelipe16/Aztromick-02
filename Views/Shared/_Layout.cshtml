@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8" />
@@ -8,19 +8,18 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Aztromick2.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 </head>
 
-<body>
+<body class="bg-danger">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bgcor border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Aztromick2</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img
+                        src="~/imagens/logo.png" alt=""></a>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
@@ -39,33 +38,70 @@
                                 method="get">
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Procurar produto" name="searchString" value="@ViewData["searchString"]">
+                                    <input type="text" class="form-control" placeholder="Procurar produto"
+                                        name="searchString" value="@ViewData["searchString"]">
                                 </div>
                             </form>
                         </li>
-                        <li>
+                        <li class="btn">
                             @await Component.InvokeAsync("CarrinhoResumo")
                         </li>
+                       
+                        
                     </ul>
+                    <div class="mx-auto">
+                         <input class="" type="" placeholder="Buscar Produtos:"> <i class="bi bi-search"></i>
+                    </div>
+                </div>
+                <div class="hstack me-3 p-1 gap-3">
+                    <button class="btn text-dark">Cadastrar</button>
+                    <button class="btn text-dark">Logar</button>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - Aztromick2 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <main class="container-fluid">
+        @RenderBody()
+    </main>
+
+   
+   
+   <div class="tamanho">
+    
+   </div>
+
+    <footer class="bgcor fixed-bottom">
+        <div class="container d-flex justify-content-center  pt-4">
+
+            
+
+            <i class="bi bi-geo-alt fs-3 pe-3"></i>
+
+
+
+            <div class="d-flex flex-column">
+                <p class="tamanhofooter fs15">Avenida Japão</p>
+                <p class="tamanhofooter fs15">Numero: 45</p>
+                <p class="fs15">Bairro Copacabana</p>
+            </div>
+
+     
+
+        <div class=" fs-4 ms-auto">
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
         </div>
+
+        </div>
+
     </footer>
+    
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
-
 </html>

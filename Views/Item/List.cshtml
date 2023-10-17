@@ -4,8 +4,9 @@
     ViewData["Title"] = "Cardapio";
 }
 
-<h1>@Model.CategoriaAtual</h1>
-<div class="row">
+<h1 class="text-white text-center">@Model.CategoriaAtual</h1>
+<hr class="bg-white">
+<div class="row d-flex justify-content-center mb-5 gap-5">
     @foreach (var item in Model.Itens)
     {
         <partial name="_Card" for="@item"></partial>

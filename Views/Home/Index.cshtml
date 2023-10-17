@@ -3,11 +3,14 @@
 @{
     ViewData["Title"] = "Cardapio";
 }
-<partial name="_Carousel" />
-<h1>Itens em Destaque</h1>
-<div class="row">
-    @foreach (var item in Model.ItensEmDestaque)
-    {
-        <partial name="_Card" for="@item"></partial>
-    }
-</div>
+
+
+    <partial name="_Carousel" />
+    <h1 class="text-white text-center mt-3">Itens em Destaque</h1>
+    <hr class="bg-white ">
+    <div class="row d-flex justify-content-center mb-5 gap-5">
+        @foreach (var item in Model.ItensEmDestaque)
+        {
+            <partial name="_Card" for="@item"></partial>
+        }
+    </div>

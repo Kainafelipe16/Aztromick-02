@@ -1,12 +1,13 @@
 @model CarrinhoViewModel
-<div class="Container">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<div class="container">
+
     <div class="row checkoutForm">
-        <div>
-            <img src="~/images/Full-Cart-icon.png" width="30" height="35" />
-            <h4>Seu carrinho de
-                compras : </h4>
-        </div>
-        <table class="table table-bordered table-striped">
+
+            <h4 class=" text-white">Seu carrinho de compras : </h4>
+        
+        <table class="table table-bordered table-striped text-white">
             <thead>
                 <tr>
                     <th>Quantidade</th>
@@ -20,16 +21,15 @@
                 @foreach (var item in Model.Carrinho.CarrinhoItens)
                 {
                     <tr>
-                        <td class="text-center">@item.Quantidade</td>
-                        <td class="text-left">@item.Item.Nome</td>
-                        <td class="text-right">@item.Item.Preco.ToString("c")</td>
-                        <td class="text-right">
+                        <td class="text-center text-white">@item.Quantidade</td>
+                        <td class="text-left text-white">@item.Item.Nome</td>
+                        <td class="text-right text-white">@item.Item.Preco.ToString("c")</td>
+                        <td class="text-right text-white">
                             @((item.Quantidade * item.Item.Preco).ToString("c"))
                         </td>
-                        <td class="text-center">
+                        <td class="text-center text-white">
                             <a asp-controller="Carrinho" asp-action="RemoverCarrinho"
-                                asp-route-itemId="@item.Item.ItemId"><img src="~/images/remover.png" width="20px"
-                                    height="20px" />
+                                asp-route-itemId="@item.Item.ItemId"><i class="bi bi-reply text-white"></i>
                             </a>
                         </td>
                     </tr>
@@ -45,16 +45,16 @@
             </tfoot>
         </table>
 
-        <div class="text-right">
-            <div class="btn-group">
-                <a class="btn btn-success" asp-controller="Pedido" asp-action="Checkout">Encerrar
+       
+            <div class="btn-group gap-3 my-3 ms-auto">
+                <a class="btn border-white text-white bg-danger" asp-controller="Pedido" asp-action="Checkout">Encerrar
                     Pedido</a>
 
-                &nbsp;&nbsp;&nbsp;
-                <a class="btn btn-primary" asp-controller="Item" asp-action="List">Continuar
+               
+                <a class="btn border-white text-white bg-success" asp-controller="Item" asp-action="List">Continuar
                     Comprando</a>
             </div>
-        </div>
-        <br />
+       
+       
     </div>
 </div>

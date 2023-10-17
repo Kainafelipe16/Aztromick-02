@@ -4,11 +4,10 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1 class="text-white">Editar Item</h1>
 
-<h4>Item</h4>
-<hr />
-<div class="row">
+<hr class="bg-white" />
+<div class="row text-white">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -59,13 +58,12 @@
                 <span asp-validation-for="CategoriaId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Criar" class="btn border-white text-white mt-3" />
             </div>
+            <a class="btn text-white border-white mt-3" asp-action="Index">Voltar a pagina</a>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
