@@ -1,10 +1,10 @@
 @model RegistroViewModel
-<table class="table">
+
     <tr>
 
-            <div class="row col-7">
-                <div class="col-9 col-md-9 col-lg-9">
-                    <h4 class="text-white">Registrar usuário</h4>
+            <div class="row d-flex justify-content-center">
+                <div class="col-9 col-md-9 col-lg-6">
+                    <h4 class="text-white text-center">Registrar usuário</h4>
                     <form asp-controller="Account" asp-action="Register" method="post">
                         <hr class="bg-white" />
                         <div asp-validation-summary="All" class="text-danger"></div>
@@ -63,4 +63,3 @@
                 </div>
             </div>
     </tr>
-</table>
