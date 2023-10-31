@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DEV\\Aztromick-02\\Aztromick2.csproj": {}
+    "C:\\dev\\Aztromick-02\\Aztromick2.csproj": {}
   },
   "projects": {
-    "C:\\DEV\\Aztromick-02\\Aztromick2.csproj": {
+    "C:\\dev\\Aztromick-02\\Aztromick2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DEV\\Aztromick-02\\Aztromick2.csproj",
+        "projectUniqueName": "C:\\dev\\Aztromick-02\\Aztromick2.csproj",
         "projectName": "Aztromick2",
-        "projectPath": "C:\\DEV\\Aztromick-02\\Aztromick2.csproj",
+        "projectPath": "C:\\dev\\Aztromick-02\\Aztromick2.csproj",
         "packagesPath": "C:\\Users\\Aluno Dev\\.nuget\\packages\\",
-        "outputPath": "C:\\DEV\\Aztromick-02\\obj\\",
+        "outputPath": "C:\\dev\\Aztromick-02\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aluno Dev\\AppData\\Roaming\\NuGet\\NuGet.Config"

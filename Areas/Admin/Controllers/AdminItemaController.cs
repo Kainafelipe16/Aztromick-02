@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using Aztromick2.Context;
 using Aztromick2.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Aztromick2.Areas.Admin.Controllers
 {
@@ -16,10 +18,14 @@ namespace Aztromick2.Areas.Admin.Controllers
     public class AdminItemaController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly ConfiguraImagem _confImg;
+        private readonly IWebHostEnvironment _hostingEnvireoment;
 
-        public AdminItemaController(AppDbContext context)
+        public AdminItemaController(AppDbContext context, IWebHostEnvironment hostEnvironment, IOptions<ConfiguraImagem> confImg)
         {
             _context = context;
+            _confImg = confImg.Value;
+            _hostingEnvireoment = hostEnvironment;
         }
 
         // GET: Admin/AdminItema
@@ -60,14 +66,28 @@ namespace Aztromick2.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ItemId,Nome,DescricaoCurta,DescricaoDetalhada,Preco,ImagemPequenaUrl,ImagemUrl,Ativo,Destaque,CategoriaId")] Item item)
+        public async Task<IActionResult> Create([Bind("ItemId,Nome,DescricaoCurta,DescricaoDetalhada,Preco,ImagemPequenaUrl,ImagemUrl,Ativo,Destaque,CategoriaId")] Item item, IFormFile Imagem, IFormFile Imagemcurta)
         {
-            if (ModelState.IsValid)
+            if (Imagem != null)
             {
+                string imagemr = await SalvarArquivo(Imagem);
+                item.ImagemUrl = imagemr;
+            }
+            if (Imagemcurta != null)
+            {
+                string imagemcr = await SalvarArquivo(Imagemcurta);
+                item.ImagemPequenaUrl = imagemcr;
+            }
+            if (ModelState.IsValid)
+
+             Console.WriteLine(ModelState.IsValid
+             +"*******************************************************************************************");
+             
+            //{
                 _context.Add(item);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
+            //}
             ViewData["CategoriaId"] = new SelectList(_context.Categorias, "CategoriaId", "Nome", item.CategoriaId);
             return View(item);
         }
@@ -94,11 +114,23 @@ namespace Aztromick2.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ItemId,Nome,DescricaoCurta,DescricaoDetalhada,Preco,ImagemPequenaUrl,ImagemUrl,Ativo,Destaque,CategoriaId")] Item item)
+        public async Task<IActionResult> Edit(int id, [Bind("ItemId,Nome,DescricaoCurta,DescricaoDetalhada,Preco,ImagemPequenaUrl,ImagemUrl,Ativo,Destaque,CategoriaId")] Item item, IFormFile Imagem, IFormFile Imagemcurta)
         {
             if (id != item.ItemId)
             {
                 return NotFound();
+            }
+            if (Imagem != null)
+            {
+                Deletefile(item.ImagemUrl);
+                string imagemr = await SalvarArquivo(Imagem);
+                item.ImagemUrl = imagemr;
+            }
+            if (Imagemcurta != null)
+            {
+                Deletefile(item.ImagemPequenaUrl);
+                string imagemcr = await SalvarArquivo(Imagemcurta);
+                item.ImagemPequenaUrl = imagemcr;
             }
 
             if (ModelState.IsValid)
@@ -156,16 +188,69 @@ namespace Aztromick2.Areas.Admin.Controllers
             var item = await _context.Itens.FindAsync(id);
             if (item != null)
             {
+                Deletefile(item.ImagemPequenaUrl);
+                Deletefile(item.ImagemPequenaUrl);
                 _context.Itens.Remove(item);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ItemExists(int id)
         {
-          return (_context.Itens?.Any(e => e.ItemId == id)).GetValueOrDefault();
+            return (_context.Itens?.Any(e => e.ItemId == id)).GetValueOrDefault();
+        }
+
+        public async Task<string> SalvarArquivo(IFormFile Imagem)
+        {
+            var filePath = Path.Combine(_hostingEnvireoment.WebRootPath,
+
+            _confImg.NomePastaImagemItem);
+
+            if (Imagem.FileName.Contains(".jpg") || Imagem.FileName.Contains(".gif")
+
+            || Imagem.FileName.Contains(".svg") || Imagem.FileName.Contains(".png"))
+
+            {
+                string novoNome =
+
+                $"{Guid.NewGuid()}.{Path.GetExtension(Imagem.FileName)}";
+
+                var fileNameWithPath = string.Concat(filePath, "\\", novoNome);
+                using (var stream = new FileStream(fileNameWithPath,
+
+                FileMode.Create))
+                {
+                    await Imagem.CopyToAsync(stream);
+                }
+                return "~/" + _confImg.NomePastaImagemItem + "/" + novoNome;
+            }
+            return null;
+        }
+        public void Deletefile(string fname)
+        {
+            if (fname != null)
+            {
+
+                int pi = fname.LastIndexOf("/") + 1;
+                int pf = fname.Length - pi;
+                string nomearquivo = fname.Substring(pi, pf);
+                try
+                {
+                    string _imagemDeleta = Path.Combine(_hostingEnvireoment.WebRootPath,
+                    _confImg.NomePastaImagemItem + "\\", nomearquivo);
+                    if ((System.IO.File.Exists(_imagemDeleta)))
+                    {
+                        System.IO.File.Delete(_imagemDeleta);
+                    }
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            }
         }
     }
 }
+

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cfJIxhMHHfRCK3N7N6L16+ySYlPlQB43XUzokiqNpNm5qocfHa84U0MWhnm2asHaTll1mm/xsNFBoDB0oC4OSA==",
+  "dgSpecHash": "orWntQdklIvVucfArGGCOL1bOtaHIL5gmvBGGzp0YiPfjuUEqp5qRDuTV27AyDI8kp5CPKKAX0mOzouBjiGXYA==",
   "success": true,
-  "projectFilePath": "C:\\DEV\\Aztromick-02\\Aztromick2.csproj",
+  "projectFilePath": "C:\\dev\\Aztromick-02\\Aztromick2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aluno Dev\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Aluno Dev\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

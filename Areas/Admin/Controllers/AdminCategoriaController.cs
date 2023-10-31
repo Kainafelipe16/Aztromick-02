@@ -151,10 +151,18 @@ namespace Aztromick2.Areas.Admin.Controllers
             var categoria = await _context.Categorias.FindAsync(id);
             if (categoria != null)
             {
+                try{
                 _context.Categorias.Remove(categoria);
+                await _context.SaveChangesAsync();
+                }catch(DbUpdateException ex)//
+                {
+                    if(ex.InnerException.ToString().Contains("FOREIGN KEY")){
+                        ViewData["Erro"] = "Essa categoria não pode ser excluida pois ja esta sendo utilizada.";
+                        return View();
+                    }
+                }
             }
             
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
