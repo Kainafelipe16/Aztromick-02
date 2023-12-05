@@ -1,0 +1,497 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\dev\\Aztromick-02\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\Aztromick2.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Aztromick2.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\XML\\Pedido.xml",
+      "PackagePath": "staticwebassets\\XML\\Pedido.xml"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\XML\\Pedidos.xml",
+      "PackagePath": "staticwebassets\\XML\\Pedidos.xml"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\bd\\Restaurante.db",
+      "PackagePath": "staticwebassets\\bd\\Restaurante.db"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\Banner.png",
+      "PackagePath": "staticwebassets\\imagens\\Banner.png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\banner2.png",
+      "PackagePath": "staticwebassets\\imagens\\banner2.png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\banner3.png",
+      "PackagePath": "staticwebassets\\imagens\\banner3.png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\09a2a53d-e473-4f12-b06c-67df31b70a96..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\09a2a53d-e473-4f12-b06c-67df31b70a96..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\0e04eff0-0fb3-4915-9f0a-2d50f8e4e453..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\0e04eff0-0fb3-4915-9f0a-2d50f8e4e453..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\0fe38dfe-55aa-4e2b-9f3d-6adbd4de9f1d..gif",
+      "PackagePath": "staticwebassets\\imagens\\item\\0fe38dfe-55aa-4e2b-9f3d-6adbd4de9f1d..gif"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\12a90057-d317-4803-9899-9a11cfae7f4f..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\12a90057-d317-4803-9899-9a11cfae7f4f..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\14fb3f3a-737f-4f8c-96d4-e5100b6293f7..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\14fb3f3a-737f-4f8c-96d4-e5100b6293f7..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\155ac665-91ea-47c6-b747-e1b499085067..gif",
+      "PackagePath": "staticwebassets\\imagens\\item\\155ac665-91ea-47c6-b747-e1b499085067..gif"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\1fb581dd-5833-4d10-8d21-abfa26cea379..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\1fb581dd-5833-4d10-8d21-abfa26cea379..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\2415f3d2-ded4-4006-a334-b6d163201ae7..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\2415f3d2-ded4-4006-a334-b6d163201ae7..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\24b14e9e-c599-4f8b-b5c9-8667633cfb73..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\24b14e9e-c599-4f8b-b5c9-8667633cfb73..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\24c68a11-18d8-46e6-9468-90a808363702..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\24c68a11-18d8-46e6-9468-90a808363702..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\2b658d61-466a-474e-9888-4df301d869e0..gif",
+      "PackagePath": "staticwebassets\\imagens\\item\\2b658d61-466a-474e-9888-4df301d869e0..gif"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\3495c2cf-d0f3-494e-8641-aa69386c0459..gif",
+      "PackagePath": "staticwebassets\\imagens\\item\\3495c2cf-d0f3-494e-8641-aa69386c0459..gif"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\35aeaa5c-b88c-4405-81ce-4654e3366190..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\35aeaa5c-b88c-4405-81ce-4654e3366190..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\377c0044-e399-44a3-8fc6-0642f979bd36..jpg",
+      "PackagePath": "staticwebassets\\imagens\\item\\377c0044-e399-44a3-8fc6-0642f979bd36..jpg"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\3d5a4272-50eb-4a03-81c3-879466d8df22..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\3d5a4272-50eb-4a03-81c3-879466d8df22..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\3daa6484-88d6-4f9c-af0b-9eb19b288830..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\3daa6484-88d6-4f9c-af0b-9eb19b288830..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\3e1938c1-eb1e-4ce9-81e6-e116ee591dea..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\3e1938c1-eb1e-4ce9-81e6-e116ee591dea..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\44f1c4e9-5743-476f-9887-b724191486fd..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\44f1c4e9-5743-476f-9887-b724191486fd..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\49dec82c-f33f-46b0-8342-9e2322a1f632..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\49dec82c-f33f-46b0-8342-9e2322a1f632..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\4a816570-cf24-4814-9451-6dbe4aeea2e1..gif",
+      "PackagePath": "staticwebassets\\imagens\\item\\4a816570-cf24-4814-9451-6dbe4aeea2e1..gif"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\581db97b-5434-4d14-b5f4-1de33eb6eea9..gif",
+      "PackagePath": "staticwebassets\\imagens\\item\\581db97b-5434-4d14-b5f4-1de33eb6eea9..gif"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\66003e2e-d934-489d-920b-d90d30fabcb5..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\66003e2e-d934-489d-920b-d90d30fabcb5..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\6ddcfee1-9edc-4c9f-a53f-fd766b3cdc7f..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\6ddcfee1-9edc-4c9f-a53f-fd766b3cdc7f..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\6e45fa92-14b6-4285-ba3d-a6d73087d5ef..jpg",
+      "PackagePath": "staticwebassets\\imagens\\item\\6e45fa92-14b6-4285-ba3d-a6d73087d5ef..jpg"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\6f868ad4-ea61-429e-8075-22e72e727dca..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\6f868ad4-ea61-429e-8075-22e72e727dca..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\70438348-7bd2-45d2-adc7-5f11742e8b18..jpg",
+      "PackagePath": "staticwebassets\\imagens\\item\\70438348-7bd2-45d2-adc7-5f11742e8b18..jpg"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\72291997-6535-4b44-8c05-6734468d86ac..jpg",
+      "PackagePath": "staticwebassets\\imagens\\item\\72291997-6535-4b44-8c05-6734468d86ac..jpg"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\725b12ff-8b42-433e-a430-635cb5c15a86..gif",
+      "PackagePath": "staticwebassets\\imagens\\item\\725b12ff-8b42-433e-a430-635cb5c15a86..gif"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\7b97669b-c3db-4286-ab5a-ccaf22ab3669..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\7b97669b-c3db-4286-ab5a-ccaf22ab3669..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\8018ea15-6570-488e-951d-636aa0602f94..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\8018ea15-6570-488e-951d-636aa0602f94..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\83bdf980-ef5d-4e22-b014-8e7b4c5f9338..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\83bdf980-ef5d-4e22-b014-8e7b4c5f9338..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\8a35f475-046b-44e7-b370-a17a3e0760bb..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\8a35f475-046b-44e7-b370-a17a3e0760bb..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\8ab0dcae-f991-448c-95e1-47e97a1780dc..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\8ab0dcae-f991-448c-95e1-47e97a1780dc..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\8d882103-d1ee-4f60-a791-417593751a9d..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\8d882103-d1ee-4f60-a791-417593751a9d..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\90117c01-c66b-4a5a-897a-b3466e2eca35..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\90117c01-c66b-4a5a-897a-b3466e2eca35..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\9145f45d-c8df-4eaa-a1ca-33f82c94c966..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\9145f45d-c8df-4eaa-a1ca-33f82c94c966..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\9503139b-36a0-4918-bc8c-1c2803417e9f..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\9503139b-36a0-4918-bc8c-1c2803417e9f..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\9d517f2d-3cdf-4ac3-b24c-0d9e90e967ec..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\9d517f2d-3cdf-4ac3-b24c-0d9e90e967ec..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\9da70ec8-a3b6-455f-8f35-bce9a23b40c3..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\9da70ec8-a3b6-455f-8f35-bce9a23b40c3..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\a8aaecfd-06c6-4da2-accd-3f178dc6c375..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\a8aaecfd-06c6-4da2-accd-3f178dc6c375..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\adb63464-f35e-4132-8166-f93d6ba16f0a..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\adb63464-f35e-4132-8166-f93d6ba16f0a..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\ae1683f4-a969-4ff1-9c79-974ada387d11..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\ae1683f4-a969-4ff1-9c79-974ada387d11..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\b15e9c0b-74a9-4a83-9329-35407fb3cf16..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\b15e9c0b-74a9-4a83-9329-35407fb3cf16..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\cc03f15a-2fb1-45a6-b5ac-e1946a9b7d0b..gif",
+      "PackagePath": "staticwebassets\\imagens\\item\\cc03f15a-2fb1-45a6-b5ac-e1946a9b7d0b..gif"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\d6ab7c67-8085-4063-a543-4856708849bd..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\d6ab7c67-8085-4063-a543-4856708849bd..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\dbdb9672-5b9b-4033-bd61-81b4f41272fc..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\dbdb9672-5b9b-4033-bd61-81b4f41272fc..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\e4606646-8685-445c-a66c-160f7cff7b05..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\e4606646-8685-445c-a66c-160f7cff7b05..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\e90abc2c-9097-4e30-83ab-93d0c15536ac..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\e90abc2c-9097-4e30-83ab-93d0c15536ac..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\f5182103-aaf4-49d2-a5be-6c086f298128..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\f5182103-aaf4-49d2-a5be-6c086f298128..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\f863c15b-d7be-4b57-acd1-fb347c62472a..png",
+      "PackagePath": "staticwebassets\\imagens\\item\\f863c15b-d7be-4b57-acd1-fb347c62472a..png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\item\\fcbb9622-7708-455b-9d45-96972c6942e4..jpg",
+      "PackagePath": "staticwebassets\\imagens\\item\\fcbb9622-7708-455b-9d45-96972c6942e4..jpg"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\imagens\\logo.png",
+      "PackagePath": "staticwebassets\\imagens\\logo.png"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\dev\\Aztromick-02\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.Aztromick2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.Aztromick2.props",
+      "PackagePath": "build\\Aztromick2.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Aztromick2.props",
+      "PackagePath": "buildMultiTargeting\\Aztromick2.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.Aztromick2.props",
+      "PackagePath": "buildTransitive\\Aztromick2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

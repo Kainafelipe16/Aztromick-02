@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net7.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/0724f2d9-1b78-434a-b3a1-da562c1a8774/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/vhsbaztromick"
+}
