@@ -1,10 +1,21 @@
-@model IEnumerable<Aztromick2.Models.Categoria>
+@model ReflectionIT.Mvc.Paging.PagingList<Aztromick2.Models.Categoria>
 
 @{
     ViewData["Title"] = "Index";
 }
 
 <h1 class="text-white">Categoria</h1>
+
+<form method="get" class="form-inline">
+<input name="filtro" class="form-control" placeholder="filtro"
+value="@Model.RouteValue["Filtro"]" />
+<button type="submit" class="btn text-white border-white mt-2">Procurar</button>
+Total de Categoria : @Model.TotalRecordCount
+</form>
+
+<div class="mt-2">
+<vc:pager paging-list="@Model"></vc:pager>
+</div>
 
 <p>
     <a class="btn border-white text-white mt-3" asp-action="Create">Criar Categoria</a>

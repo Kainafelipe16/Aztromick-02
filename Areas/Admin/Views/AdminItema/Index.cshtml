@@ -1,4 +1,4 @@
-@model IEnumerable<Aztromick2.Models.Item>
+@model ReflectionIT.Mvc.Paging.PagingList<Aztromick2.Models.Item>
 
 @{
     ViewData["Title"] = "Index";
@@ -6,8 +6,18 @@
 
 <h1 class="text-white">Itens</h1>
 
+<form method="get" class="form-inline">
+    <input name="filtro" class="form-control" placeholder="filtro" value="@Model.RouteValue["Filtro"]" />
+    <button type="submit" class="btn text-white border-white mt-2">Procurar</button>
+    Total de Moveis : @Model.TotalRecordCount
+</form>
+
+<div class="mt-2">
+    <vc:pager paging-list="@Model"></vc:pager>
+</div>
+
 <p>
-    <a class="btn border-white text-white" asp-action="Create">Criar um Item</a>
+    <a class="btn border-white text-white mt-3" asp-action="Create">Criar um Item</a>
 </p>
 <table class="table text-white">
     <thead>
@@ -43,41 +53,42 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DescricaoCurta)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DescricaoDetalhada)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Preco)
-            </td>
-            <td>
-                <img src="@Html.DisplayFor(modelItem => item.ImagemPequenaUrl)" width="75px">
-            </td>
-            <td>
-                <img src="@Html.DisplayFor(modelItem => item.ImagemUrl)" width="100px">
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ativo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Destaque)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Categoria.CategoriaId)
-            </td>
-            <td>
-                <a class="btn  text-white" asp-action="Edit" asp-route-id="@item.ItemId">Editar</a> 
-                <a class="btn  text-white" asp-action="Details" asp-route-id="@item.ItemId">Detalhes</a> 
-                <a class="btn  text-white" asp-action="Delete" asp-route-id="@item.ItemId">Deletar</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DescricaoCurta)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DescricaoDetalhada)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Preco)
+                </td>
+                <td>
+                    <img src="@item.ImagemUrl" width="75px" asp-append-version="true">
+                </td>
+                <td>
+                    <img src="@item.ImagemPequenaUrl" width="100px" asp-append-version="true">
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ativo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Destaque)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Categoria.CategoriaId)
+                </td>
+                <td>
+                    <a class="btn  text-white" asp-action="Edit" asp-route-id="@item.ItemId">Editar</a>
+                    <a class="btn  text-white" asp-action="Details" asp-route-id="@item.ItemId">Detalhes</a>
+                    <a class="btn  text-white" asp-action="Delete" asp-route-id="@item.ItemId">Deletar</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

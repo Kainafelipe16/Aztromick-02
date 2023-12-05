@@ -34,32 +34,22 @@
             </div>
             <div class="form-group">
 
-<label for="ImagemAtual">Imagem Atual</label>
-<img src="@Model.ImagemUrl" alt="Imagem do Produto Atual"
+                <label for="ImagemAtual">Imagem Atual</label>
+                <img src="@Model.ImagemUrl" alt="Imagem do Produto Atual" asp-append-version="true">
 
-asp-append-version="true">
+                <input type="hidden" name="ImagemUrl" value="@Model.ImagemUrl">
+            </div>
+            <div class="form-group">
+                <label for="Imagem">Nova Imagem:</label>
+                <input type="file" class="form-control" name="Imagem" id="Imagem">
+            </div>
+            <div class="form-group">
+                <label for="ImagemAtualc">Imagem Atual curta</label>
+                <img src="@Model.ImagemPequenaUrl" alt="Imagem do ProdutoAtual" asp-append-version="true">
 
-<input type="hidden" name="ImagemUrl"
+                <input type="hidden" name="ImagemPequenaUrl" value="@Model.ImagemPequenaUrl">
 
-value="@Model.ImagemUrl">
-</div>
-<div class="form-group">
-<label for="Imagem">Nova Imagem:</label>
-<input type="file" class="form-control" name="Imagem"
-
-id="Imagem">
-</div>
-<div class="form-group">
-<label for="ImagemAtualc">Imagem Atual curta</label>
-<img src="@Model.ImagemPequenaUrl" alt="Imagem do Produto
-
-Atual" asp-append-version="true">
-
-<input type="hidden" name="ImagemPequena"
-
-value="@Model.ImagemPequenaUrl">
-
-</div>
+            </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Ativo" /> @Html.DisplayNameFor(model => model.Ativo)
@@ -82,6 +72,3 @@ value="@Model.ImagemPequenaUrl">
         </form>
     </div>
 </div>
-
-
-

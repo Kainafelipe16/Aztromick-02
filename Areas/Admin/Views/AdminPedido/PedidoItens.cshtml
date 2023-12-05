@@ -1,0 +1,48 @@
+@model Aztromick2.ViewModel.PedidoItensViewModel
+@{
+    ViewData["Title"] = "PedidoLanches";
+    decimal totalPedido = 0;
+}
+<h1 class="text-white">Lanches do Pedido</h1>
+<hr class="bg-white" />
+<h3 class="text-white">Pedido : @Html.DisplayFor(model => @Model.Pedidos.PedidoId)</h3>
+<h3 class="text-white">Cliente : @Html.DisplayFor(model => @Model.Pedidos.Nome)</h3>
+<h3 class="text-white">Data : @Html.DisplayFor(model =>
+    @Model.Pedidos.PedidoEnviado)</h3>
+<h3 class="text-white">Entrega : @Html.DisplayFor(model =>
+    @Model.Pedidos.PedidoEnviadoEm)</h3>
+
+    @foreach (var item in @Model.Pedidos.PedidoItens)
+    {
+        totalPedido += (Convert.ToDecimal(@item.Item.Preco) *
+        @item.Quantidade);
+        <tr>
+            <td align="right">
+                <h3 class="text-white">@Html.DisplayFor(modelItem => item.Item.Nome)</h3>
+            </td>
+            <td align="right">
+                <img src="@item.Item.ImagemPequenaUrl" class="img-fluid" height="100" width="100">
+            </td>
+            <td align="right">
+                <h3 class="text-white">@string.Format("{0:C}", item.Item.Preco)</h3>
+            </td>
+            <td align="right">
+                <h3 class="text-white">(@Html.DisplayFor(modelItem => item.Quantidade))</h3>
+            </td>
+            <td>
+                <a asp-controller="AdminPedidoItem" asp-action="Edit" asp-route-id="@item.PedidoItemId">Editar</a>
+                <a asp-controller="AdminPedidoItem" asp-action="Delete" asp-route-id="@item.PedidoItemId">Deletar</a>
+            </td>
+        </tr>
+    }
+    <tr>
+        <td colspan="2">&nbsp;</td>
+        <td align="right">
+            <h3 class="text-white">Total do Pedido : @string.Format("{0:C}",
+
+                @totalPedido)</h3>
+        </td>
+    </tr>
+
+<a asp-action="Index" class="btn border-white text-white">Retornar</a>
+<a asp-controller="AdminPeidoItem" asp-action="Create" asp-route-pedidoId="@Model.Pedidos.PedidoId" class="btn btn-outline-info">Adicionar mais item</a>

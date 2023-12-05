@@ -10,6 +10,7 @@ using Aztromick2.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using ReflectionIT.Mvc.Paging;
 
 namespace Aztromick2.Areas.Admin.Controllers
 {
@@ -29,10 +30,22 @@ namespace Aztromick2.Areas.Admin.Controllers
         }
 
         // GET: Admin/AdminItema
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string filtro, int pageindex = 1, string sort = "Nome")
         {
-            var appDbContext = _context.Itens.Include(i => i.Categoria);
-            return View(await appDbContext.ToListAsync());
+            var moveislist = _context.Itens.AsNoTracking().AsQueryable();
+
+            if (filtro != null)
+            {
+                moveislist = moveislist.Where(p => p.Nome.ToLower().Contains(filtro.ToLower()));
+
+            }
+            var model = await PagingList.CreateAsync(moveislist, 5,pageindex, sort, "Nome");
+
+            model.RouteValue = new RouteValueDictionary{{"filtro", filtro
+
+}};
+
+            return View(model);
         }
 
         // GET: Admin/AdminItema/Details/5
@@ -78,18 +91,15 @@ namespace Aztromick2.Areas.Admin.Controllers
                 string imagemcr = await SalvarArquivo(Imagemcurta);
                 item.ImagemPequenaUrl = imagemcr;
             }
-            if (ModelState.IsValid)
 
-             Console.WriteLine(ModelState.IsValid
-             +"*******************************************************************************************");
-             
-            //{
-                _context.Add(item);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            //}
-            ViewData["CategoriaId"] = new SelectList(_context.Categorias, "CategoriaId", "Nome", item.CategoriaId);
-            return View(item);
+            // if (ModelState.IsValid)             
+            //  {
+            _context.Add(item);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+            // }
+            // ViewData["CategoriaId"] = new SelectList(_context.Categorias, "CategoriaId", "Nome", item.CategoriaId);
+            // return View(item);
         }
 
         // GET: Admin/AdminItema/Edit/5
@@ -133,28 +143,28 @@ namespace Aztromick2.Areas.Admin.Controllers
                 item.ImagemPequenaUrl = imagemcr;
             }
 
-            if (ModelState.IsValid)
+            // if (ModelState.IsValid)
+            // {
+            try
             {
-                try
-                {
-                    _context.Update(item);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ItemExists(item.ItemId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                _context.Update(item);
+                await _context.SaveChangesAsync();
             }
-            ViewData["CategoriaId"] = new SelectList(_context.Categorias, "CategoriaId", "Nome", item.CategoriaId);
-            return View(item);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ItemExists(item.ItemId))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction(nameof(Index));
+            // }
+            // ViewData["CategoriaId"] = new SelectList(_context.Categorias, "CategoriaId", "Nome", item.CategoriaId);
+            //  return View(item);
         }
 
         // GET: Admin/AdminItema/Delete/5
@@ -190,10 +200,23 @@ namespace Aztromick2.Areas.Admin.Controllers
             {
                 Deletefile(item.ImagemPequenaUrl);
                 Deletefile(item.ImagemPequenaUrl);
-                _context.Itens.Remove(item);
+                try
+                {
+                    _context.Itens.Remove(item);
+                    await _context.SaveChangesAsync();
+
+                }
+                catch (DbUpdateException ex)//
+                {
+                    if (ex.InnerException.ToString().Contains("FOREIGN KEY"))
+                    {
+                        ViewData["Erro"] = "Esse Item não pode ser excluido pois ja esta sendo utilizada em uma Categoria.";
+                        return View();
+                    }
+                }
             }
 
-            await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
         }
 
@@ -224,7 +247,7 @@ namespace Aztromick2.Areas.Admin.Controllers
                 {
                     await Imagem.CopyToAsync(stream);
                 }
-                return "~/" + _confImg.NomePastaImagemItem + "/" + novoNome;
+                return "/" + _confImg.NomePastaImagemItem + "/" + novoNome;
             }
             return null;
         }

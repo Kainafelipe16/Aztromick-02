@@ -55,5 +55,6 @@ public DateTime PedidoEnviado { get; set; }
 ApplyFormatInEditMode = true)]
 public DateTime PedidoEnviadoEm { get; set; }
 public List<PedidoItem> PedidoItens { get; set; }
-}
+
+    }
 }

@@ -1,0 +1,58 @@
+@model ReflectionIT.Mvc.Paging.PagingList<Aztromick2.Models.Pedido>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-white">Index</h1>
+
+<form method="get" class="form-inline">
+<input name="filtro" class="form-control" placeholder="filtro"
+value="@Model.RouteValue["Filtro"]" />
+<button type="submit" class="btn text-white border-white mt-2">Procurar</button>
+Total de Moveis : @Model.TotalRecordCount
+</form>
+<div>
+<vc:pager paging-list="@Model"></vc:pager>
+</div>
+
+<p>
+    <a asp-action="Create" class="btn text-white border-white mt-2">Criar</a>
+</p>
+
+
+
+<div class="list-group">
+
+@foreach (var item in Model) {
+
+
+    
+  <div class="list-group-item list-group-item-action rounded my-2">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">@Html.DisplayFor(modelItem => item.Nome)</h5>
+      <small>Data: @Html.DisplayFor(modelItem => item.PedidoEnviado)</small>
+    </div>
+    <p class="mb-1">Endereço:  @Html.DisplayFor(modelItem => item.Endereco1), nº  @Html.DisplayFor(modelItem => item.Numero), @Html.DisplayFor(modelItem => item.Endereco2),  @Html.DisplayFor(modelItem => item.Bairro), @Html.DisplayFor(modelItem => item.Cidade), @Html.DisplayFor(modelItem => item.Estado), CEP: @Html.DisplayFor(modelItem => item.Cep)</p>
+    <small>@Html.DisplayFor(modelItem => item.Telefone)</small>
+    <small>Pedido Enviado em: @Html.DisplayFor(modelItem => item.PedidoEnviadoEm)</small>
+    <div class="col-12">@Html.DisplayFor(modelItem => item.Email)</div>
+        <div class="col-12 my-3">
+                <a asp-action="Edit" asp-route-id="@item.PedidoId" class="btn btn-danger text-white">Edit</a> 
+                <a asp-action="Details" asp-route-id="@item.PedidoId" class=" btn btn-danger text-white">Details</a>
+                <a asp-action="Delete" asp-route-id="@item.PedidoId" class="btn btn-danger text-white">Delete</a>
+                <a asp-action="PedidoItens" asp-route-id="@item.PedidoId" class="btn btn-danger text-white">Itens</a>
+    </div>
+   
+  </div>
+ 
+
+
+
+
+          
+}
+
+
+
+</div>

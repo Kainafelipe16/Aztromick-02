@@ -1,3 +1,4 @@
+using Aztromick2.Areas.Admin.Services;
 using Aztromick2.Context;
 using Aztromick2.Models;
 using Aztromick2.Repositories;
@@ -5,10 +6,12 @@ using Aztromick2.Repositories.Interfaces;
 using Aztromick2.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using ReflectionIT.Mvc.Paging;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<RelatorioVendasServices>();
 builder.Services.Configure<ConfiguraImagem>(builder.Configuration.GetSection("ConfImagemItem"));
 builder.Services.AddTransient<IPedidoRepository, PedidoRepository>();
 builder.Services.AddScoped<IUserRoleInicial, UserRoleInicial>();
@@ -21,6 +24,10 @@ builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddTransient<IItemRepository, ItemRepository>();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaulConnection")));
 builder.Services.AddControllersWithViews();
+builder.Services.AddPaging(options => {
+options.ViewName = "Bootstrap5";
+options.PageParameterName = "pageindex";
+});
 
 var app = builder.Build();
 

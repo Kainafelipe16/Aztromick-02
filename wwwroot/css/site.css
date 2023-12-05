@@ -29,3 +29,13 @@ height: 227px;
 .tamanho2{
   height: 346px;
   }
+
+.page-link{
+  border-color: white !important;
+  color: red !important;
+  
+}
+
+.page-item{
+  background-color: white !important;
+}
